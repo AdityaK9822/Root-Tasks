@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --section-padding: 20px;
+      --section-margin: 25px;
+      --card-padding: 15px;
+      --card-padding-hover: 30px;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--section-margin);
+    }
+
+    .card {
+      width: 220px;
+      padding: var(--card-padding);
+      border-radius: 12px;
+
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      border: 1px solid rgba(0, 0, 0, 0.3);
+
+
+      transition: padding 0.3s ease, transform 0.3s ease;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .card:hover {
+      padding: var(--card-padding-hover);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">This is Card 1</div>
+    <div class="card">This is Card 2</div>
+    <div class="card">This is Card 3</div>
+    <div class="card">This is Card 4</div>
+  </div>
+
+</body>
+</html>

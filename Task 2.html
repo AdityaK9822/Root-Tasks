@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --card-bg: #f2f2f2;
+      --card-text: #222;
+      --card-padding: 20px;
+      --card-border: 3px solid rgb(187, 187, 187);
+      --card-font-size: 18px;
+    }
+
+    body {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      color: var(--card-text);
+      padding: var(--card-padding);
+      border: var(--card-border);
+      font-size: var(--card-font-size);
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Card One</h2>
+    <p>This card uses root variables.</p>
+  </div>
+
+  <div class="card">
+    <h2>Card Two</h2>
+    <p>This card updates automatically.</p>
+  </div>
+
+</body>
+</html>
